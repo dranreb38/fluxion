@@ -93,16 +93,16 @@ function airmon {
 airmon
 
 # Check Updates
-function checkupdatess {
+#function checkupdatess {
 
-	revision_online="$(timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/asux3/fluxion/master/fluxion" 2>/dev/null| grep "^revision" | cut -d "=" -f2)"
-	if [ -z "$revision_online" ]; then
-		echo "?">$DUMP_PATH/Irev
-	else
-		echo "$revision_online">$DUMP_PATH/Irev
-	fi
+	#revision_online="$(timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/deltaxflux/fluxion/master/fluxion" 2>/dev/null| grep "^revision" | cut -d "=" -f2)"
+	#if [ -z "$revision_online" ]; then
+	#	echo "?">$DUMP_PATH/Irev
+	#else
+	#	echo "$revision_online">$DUMP_PATH/Irev
+	#fi
 
-}
+#}
 
 # Animation
 function spinner {
